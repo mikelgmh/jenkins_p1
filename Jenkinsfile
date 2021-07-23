@@ -1,10 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        sh '''javac /src/jenkins_p1/Main.java
-java /src/jenkins_p1/Main Mikel'''
+        sh '''ls -la
+javac src/jenkins_p1/Main.java
+java src/jenkins_p1/Main Mikel'''
       }
     }
 
